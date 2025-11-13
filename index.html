@@ -387,7 +387,7 @@
     <footer><p>© 2025 Agro-Sostenible - Innovando el Futuro del Campo</p></footer>
     
     <!-- MODALES -->
-    <div id="cart-modal" class="modal"><div class="modal-content"><span class="close-modal-btn" id="close-cart-btn">&times;</span><h2>Tu Carrito de Compras</h2><ul id="cart-items-list"><p>Tu carrito está vacío.</p></ul><hr><div id="cart-footer"><div id="cart-total">Total: $0.00</div><div><button class="cart-action-btn danger" onclick="emptyCart()">Vaciar Carrito</button><button class="cart-action-btn" onclick="simulatePurchase()">Simular Compra</button></div></div></div></div>
+    <div id="cart-modal" class="modal"><div class="modal-content"><span class="close-modal-btn" id="close-cart-btn">&times;</span><h2>Tu Carrito de Compras</h2><ul id="cart-items-list"><p>Tu carrito está vacío.</p></ul><hr><div id="cart-footer"><div id="cart-total">Total: $0.00</div><div><button class="cart-action-btn danger" onclick="emptyCart()">Vaciar Carrito</button><button class="cart-action-btn" onclick="simulatePurchase()">Comprar</button></div></div></div></div>
     <div id="chatbot-modal" class="modal"><div class="modal-content"><span class="close-modal-btn" id="close-chatbot-btn">&times;</span><h2>Asistente Virtual</h2><div class="chat-window" id="chat-window"></div><form id="chat-input-form"><input type="text" id="chat-input" placeholder="Escribe el número de la opción..." autocomplete="off"><button type="submit" id="chat-send-btn">Enviar</button></form></div></div>
     
     <script>
@@ -482,7 +482,7 @@
                 if (cart.length === 0) {
                     showNotification("Tu carrito está vacío.", "danger"); return;
                 }
-                showNotification("¡Gracias por tu compra simulada!");
+                showNotification("¡Gracias por tu compra!");
                 cart = [];
                 updateCart();
                 cartModal.style.display = 'none';
